@@ -3,15 +3,14 @@ Use this service to get, add, update, or delete adgroup.
 #### WSDL
 | environment | url |
 |---|---|
-| production  | https://location.im.yahooapis.jp/services/V5.2/AdGroupService?wsdl|
-| sandbox  | https://sandbox.im.yahooapis.jp/services/V5.2/AdGroupService?wsdl|
+| production  | https://location.im.yahooapis.jp/services/V5.0/AdGroupService?wsdl|
+| sandbox  | https://sandbox.im.yahooapis.jp/services/V5.0/AdGroupService?wsdl|
 #### Namespace
 http://im.yahooapis.jp/V5
 #### Service Overview
 Retrieves and updates ad groups.
 #### Operation
 Explains operations provided by AdGroupService.
-
 ## get
 ### Request
 Retrieves ad information.
@@ -151,7 +150,6 @@ Retrieves ad information.
                         <ns1:deviceApp>WEB</ns1:deviceApp>
                         <ns1:deviceOs>ANDROID</ns1:deviceOs>
                         <ns1:deviceOs>IOS</ns1:deviceOs>
-                        <ns1:smartDeviceCarriers>DOCOMO</ns1:smartDeviceCarriers>
                         <ns1:dynamicImageExtensions>PAUSED</ns1:dynamicImageExtensions>
                     </ns1:adGroup>
                 </ns1:values>
@@ -203,7 +201,6 @@ Adds an ad group.
                     <ns1:deviceApp>WEB</ns1:deviceApp>
                     <ns1:deviceOs>ANDROID</ns1:deviceOs>
                     <ns1:deviceOs>IOS</ns1:deviceOs>
-                    <ns1:smartDeviceCarriers>DOCOMO</ns1:smartDeviceCarriers>
                     <ns1:dynamicImageExtensions>ACTIVE</ns1:dynamicImageExtensions>
                 </ns1:operand>
                 <ns1:operand>
@@ -227,9 +224,7 @@ Adds an ad group.
 <?xml version="1.0" encoding="UTF-8"?>
 <SOAP-ENV:Envelope
  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
- xmlns:ns1="http://im.yahooapis.jp/V5"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <SOAP-ENV:Header>
+ xmlns:ns1="http://im.yahooapis.jp/V5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> <SOAP-ENV:Header>
         <ns1:RequestHeader>
             <ns1:license>1111-1111-1111-1111</ns1:license>
             <ns1:apiAccountId>2222-2222-2222-2222</ns1:apiAccountId>
@@ -260,7 +255,6 @@ Adds an ad group.
                     <ns1:deviceApp>WEB</ns1:deviceApp>
                     <ns1:deviceOs>ANDROID</ns1:deviceOs>
                     <ns1:deviceOs>IOS</ns1:deviceOs>
-                    <ns1:smartDeviceCarriers>DOCOMO</ns1:smartDeviceCarriers>
                     <ns1:dynamicImageExtensions>ACTIVE</ns1:dynamicImageExtensions>
                 </ns1:operand>
                 <ns1:operand>
@@ -321,7 +315,6 @@ Adds an ad group.
                         <ns1:device>SMARTPHONE</ns1:device>
                         <ns1:deviceApp>APP</ns1:deviceApp>
                         <ns1:deviceOs>ANDROID</ns1:deviceOs>
-                        <ns1:smartDeviceCarriers>DOCOMO</ns1:smartDeviceCarriers>
                         <ns1:dynamicImageExtensions>ACTIVE</ns1:dynamicImageExtensions>
                     </ns1:adGroup>
                 </ns1:values>
@@ -383,7 +376,6 @@ Updates an ad group.
                     <ns1:deviceApp>WEB</ns1:deviceApp>
                     <ns1:deviceOs>ANDROID</ns1:deviceOs>
                     <ns1:deviceOs>IOS</ns1:deviceOs>
-                    <ns1:smartDeviceCarriers>DOCOMO</ns1:smartDeviceCarriers>
                     <ns1:dynamicImageExtensions>PAUSED</ns1:dynamicImageExtensions>
                 </ns1:operand>
                 <ns1:operand>
@@ -433,12 +425,11 @@ Updates an ad group.
                         <ns1:maxCpc>120</ns1:maxCpc>
                     </ns1:bid>
                     <ns1:device>DESKTOP</ns1:device>
-                    <ns1:device>TABLET</ns1:device>
+　　　　　　　　　　<ns1:device>TABLET</ns1:device>
                     <ns1:deviceApp>APP</ns1:deviceApp>
                     <ns1:deviceApp>WEB</ns1:deviceApp>
                     <ns1:deviceOs>ANDROID</ns1:deviceOs>
                     <ns1:deviceOs>IOS</ns1:deviceOs>
-                    <ns1:smartDeviceCarriers>DOCOMO</ns1:smartDeviceCarriers>
                     <ns1:dynamicImageExtensions>PAUSED</ns1:dynamicImageExtensions>
                 </ns1:operand>
                 <ns1:operand>
@@ -498,7 +489,6 @@ Updates an ad group.
                         <ns1:deviceApp>WEB</ns1:deviceApp>
                         <ns1:deviceOs>ANDROID</ns1:deviceOs>
                         <ns1:deviceOs>IOS</ns1:deviceOs>
-                        <ns1:smartDeviceCarriers>DOCOMO</ns1:smartDeviceCarriers>
                         <ns1:dynamicImageExtensions>PAUSED</ns1:dynamicImageExtensions>
                     </ns1:adGroup>
                 </ns1:values>

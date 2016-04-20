@@ -3,7 +3,7 @@
 Technical specifications for each web service.
 
 ### [Release Notes](/docs/en/releasenotes.md)
-Release Notes of this version.
+YDN API ver.4.6  
   
 ### [Best Practice](/docs/en/bestpractice/ReadMe.md)
 Best Practice introduces an efficient way of using Promotional Ads API.  

@@ -1,7 +1,8 @@
 # SOAPエラーコード
+
 ### エラー処理概要
 SOAPリクエストが成功した場合、YDN APIは HTTP 200 OKというレスポンスコードとSOAPのレスポンスを返します。<br> SOAPリクエストの処理中にエラーが発生した場合、YDN API はエラーコードが含まれるメッセージを返します。<br>
-詳しくは[Error](/docs/ja/api_reference/data/Error.md), [ErrorDetail](/docs/ja/api_reference/data/ErrorDetail.md)を確認してください。  
+詳しくは[Error](/docs/ja/api_reference/data/Error.md),  [ErrorDetail](/docs/ja/api_reference/data/ErrorDetail.md)を確認してください。  
    
 ##### ＜レスポンスサンプル＞
 ```xml
@@ -25,12 +26,13 @@ SOAPリクエストが成功した場合、YDN APIは HTTP 200 OKというレス
 #### 共通エラー
 ##### Service
 全サービス共通 
-  
+
 コード         | メッセージ                  | 説明                   
 -------------- | --------------------------- | ---------------------------
 110001 | Invalid Request.  | リクエストが無効です。
 110002 | Frequency limit exceeded. Please try your request again later.  | 回数の制限を超えました。後で再試行してください。
 110003 | Invalid location.  | ロケーションが無効です。
+110004 | Quota exceeded. service = %s , Quota = %s | クォータの制限を超えました。 service = %s , Quota = %s
 110005 | Not a valid id.  | IDが有効ではありません。
 110006 | Can not login for %s.  | %sではログインできません。
 110007 | Invalid method.  | methodが無効です。
@@ -66,7 +68,6 @@ SOAPリクエストが成功した場合、YDN APIは HTTP 200 OKというレス
 120026 | Status error.  | ステータスエラーです。
 120029 | This value is registered.  | この値は登録済みです。
 
-
 #### 入稿に関連するエラー
 ##### Service
 [RetargetingListService](/docs/ja/api_reference/services/RetargetingListService.md)
@@ -83,7 +84,7 @@ SOAPリクエストが成功した場合、YDN APIは HTTP 200 OKというレス
 -------------- | --------------------------- | ---------------------------
 220016 | Advance setting was made to the product or targeting that is not available.  | 指定された広告商品またはターゲティングの値では拡張設定できません。
 220018 | This Target settings is unavailable.  | キャンペーンの商品種別が、ターゲティング設定できない商品です。
-															
+
 ##### Service
 [BulkService](/docs/ja/api_reference/services/BulkService.md)
 
@@ -131,7 +132,6 @@ SOAPリクエストが成功した場合、YDN APIは HTTP 200 OKというレス
 コード         | メッセージ                  | 説明                   
 -------------- | --------------------------- | ---------------------------
 220125 | Unavailable the dynamicImageExtensions.  | インタレストマッチ・ターゲティング以外の広告商品の場合、画像自動付与フラグの設定はできません。 
-220132 | Cannot set the carrier type. | 選択したデバイスは、キャリアの選択ができません。
 
 ##### Service
 [MediaService](/docs/ja/api_reference/services/MediaService.md)

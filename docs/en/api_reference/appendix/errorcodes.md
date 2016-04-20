@@ -1,5 +1,4 @@
 # SOAP Error Codes
-
 ### Error Process Outline
 When a SOAP request is successful, YDN API sends back the "HTTP 200 OK" response code, along with a SOAP response. <br>
 If an error occurs while a SOAP request is being processed, YDN API sends back a message with an error code. <br>
@@ -21,8 +20,9 @@ For details, please refer to [Error](/docs/en/api_reference/data/Error.md) and/o
    </SOAP-ENV:Body> 
 </SOAP-ENV:Envelope>
 ```
+
 ### Error Code
-The following list provides SOAP error codes and error content displayed when an error or problem occurs.  
+The following list provides SOAP error codes and error content displayed when an error or problem occurs. 
 
 #### General Errors
 ##### Service
@@ -33,6 +33,7 @@ Code           | Message                     | Description
 110001 | Invalid Request.  | Invalid Request.  
 110002 | Frequency limit exceeded. Please try your request again later.  | Frequency limit exceeded. Please try your request again later.  
 110003 | Invalid location.  | Invalid location.  
+110004 | Quota exceeded. service = %s , Quota = %s | Quota exceeded.  service = %s , Quota = %s 
 110005 | Not a valid id.  | Not a valid id.  
 110006 | Can not login for %s.  | Cannot login for %s.  
 110007 | Invalid method.  | Invalid method.  
@@ -132,7 +133,6 @@ Code           | Message                     | Description
 Code           | Message                     | Description                
 -------------- | --------------------------- | ---------------------------
 220125 | Unavailable the dynamicImageExtensions.  | Cannot set Dynamic Image Extensions, due to the non-eligible Ad distribution.
-220132 | Cannot set the carrier type. | Selected device is not available to select the carrier type.
 
 ##### Service
 [MediaService](/docs/en/api_reference/services/MediaService.md)
