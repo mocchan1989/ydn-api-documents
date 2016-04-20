@@ -1,5 +1,5 @@
-# ReportIntervalType (enum)
-ReportIntervalType serves the schedule of report creation.
+# ReportFrequency (enum)
+ReportFrequency serves the schedule of report creation.
 ### Service
 + [ReportDefinitionService](../services/ReportDefinitionService.md)
 

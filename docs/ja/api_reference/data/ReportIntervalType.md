@@ -1,5 +1,5 @@
-# ReportFrequency (enum)
-ReportFrequencyは定期レポート作成タイミングを表します。
+# ReportIntervalType (enum)
+ReportIntervalTypeは定期レポート作成タイミングを表します。
 ### Service
 + [ReportDefinitionService](../services/ReportDefinitionService.md)
 
